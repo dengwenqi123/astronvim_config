@@ -8,6 +8,10 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
+    ["J"] = { "5j" },
+    ["K"] = { "5k" },
+    ["ga"] = { "<cmd>set opfunc=<SNR>32_easy_align_op<CR>g@" },
+    ["ss"] = { "<cmd>call EasyMotion#S(2,0,2)<CR>", desc = "Split window Vertical" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
